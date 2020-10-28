@@ -1,19 +1,22 @@
 import sys
 from setuptools import setup, find_packages
 
-assert sys.version_info >= (3, 6, 0)
+from jumper.settings import *
 
-VERSION = "0.0.1"
+assert sys.version_info >= MINIMUM_PYTHON_VERSION
 
 setup(
-    name="fussball-test0",
+    name="fussball0",
     version=VERSION,
     author="Terminal Labs",
     author_email="solutions@terminallabs.com",
     license="see LICENSE file",
     zip_safe=False,
     include_package_data=True,
-    install_requires=["setuptools", "click", "pytest"],
+    install_requires=[
+        "setuptools",
+        "fuzzball@git+https://github.com/terminal-labs/fuzzball.git",
+    ],
     entry_points="""
         [console_scripts]
         jumper=jumper.cli:main
