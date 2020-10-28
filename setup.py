@@ -6,7 +6,7 @@ assert sys.version_info >= (3, 6, 0)
 VERSION = "0.0.1"
 
 setup(
-    name="complexcluster",
+    name="fussball-test0",
     version=VERSION,
     author="Terminal Labs",
     author_email="solutions@terminallabs.com",
@@ -16,6 +16,6 @@ setup(
     install_requires=["setuptools", "click", "pytest"],
     entry_points="""
         [console_scripts]
-        complexcluster=complexcluster.cli:main
+        jumper=jumper.cli:main
      """,
 )
