@@ -6,7 +6,7 @@ from jumper.settings import *
 assert sys.version_info >= MINIMUM_PYTHON_VERSION
 
 setup(
-    name="fussball0",
+    name="fussball-states",
     version=VERSION,
     author="Terminal Labs",
     author_email="solutions@terminallabs.com",
