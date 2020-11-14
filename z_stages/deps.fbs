@@ -1,5 +1,4 @@
-!! block demo
-some_call:
+some_call_deps:
   name: demo
   driver: "shell"
   formater: "shell"
@@ -7,4 +6,3 @@ some_call:
     echo "hello"
   flags:
       - expect-json
-!! endblock demo
