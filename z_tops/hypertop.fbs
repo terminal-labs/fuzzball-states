@@ -1,3 +1,13 @@
+!! block "init"
+some_call_deps:
+  name: "localsalt"
+  driver: "saltlocal"
+  formater: "shell"
+  command: >
+    echo "hello"
+  flags:
+      - "expect-raw"
+!! endblock
 !! file "deps"
 !! file "salt"
 !! block "test"
